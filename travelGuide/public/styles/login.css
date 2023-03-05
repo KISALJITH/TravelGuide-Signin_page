@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins',
+        sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+:root {
+    --orange: #FF6000;
+}
+
+body {
+    background: url(../images/loginpage.jpg);
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+section {
+    padding: 10rem 9%;
+    margin: 0;
+    padding-bottom: 4.5rem;   
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    background-color: white;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+.wrapper .form-control {
+    width: 100%;
+}
+
+.wrapper .form-control .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    margin: auto;
+    justify-content: center;
+    height: 30px;
+    width: 120px;
+    border-style: solid;
+    border-color: var(--orange);
+    border-width: 3px 0 0 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: rgb(102, 102, 102);
+}
+
+.wrapper p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(102, 102, 102);
+    padding-top: 20px;
+
+}
+
+.wrapper p a:link {
+    font-weight: bolder;
+    color: rgb(6, 69, 173);
+    text-decoration: underline;
+}
+
+.wrapper p a:hover {
+    font-weight: bolder;
+    color: rgb(6, 31, 71);
+    text-decoration: underline;
+}
+
+.wrapper .form-control .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form-control .form-group label {
+    width: 250px;
+    font-size: 1.5rem;
+    color: rgb(102, 102, 102);
+    margin-right: 10px;
+}
+
+.wrapper .form-control .form-group input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--orange);
+    box-shadow: 0 0 0 var(--orange);
+}
+
+.wrapper .form-control .form-group .input-field:focus {
+    background-color: rgb(223, 226, 228);
+    border-bottom: none;
+    box-shadow: none;
+
+}
+
+.wrapper .form-control .form-group p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.wrapper .form-control .forgot-pw {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(102, 102, 102);
+    padding-top: 5px;
+    margin-top: 4rem;
+}
+
+.wrapper .avatar {
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.wrapper .avatar .fas {
+    font-size: 5rem;
+}
+
+.wrapper .form-control .submitBtn {
+    background: white;
+    width: 100%;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    border: 0.25rem solid var(--orange);
+    color: var(--orange);
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+.wrapper .form-control .submitBtn:hover {
+    color: #fff;
+    background-color: var(--orange);
+}
+
+@media (max-width:900px) {
+
+    section {
+        padding: 10rem;
+    }
+
+    .wrapper .form-control .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .wrapper .form-control .form-group label {
+        margin-bottom: 5px;
+
+    }
+}

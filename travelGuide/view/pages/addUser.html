@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom styling sheet -->
+    <link rel="stylesheet" href="../../public/styles/addUser.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Add User</title>
+</head>
+
+    <body>
+        <!-- navigation menu -->
+        <header>
+            <a href="#" class="logo"> <i class="fas fa-map-marked"></i> Travel Guide</a>
+            <div class="profile">
+                <button class="logoutBtn" onclick="logout()">Logout</button>
+            </div>
+        </header><!-- custom js file  -->
+        <div class="headermargin"></div>
+        <section>
+            <div class="wrapper1"></div>
+            
+            <div class="wrapper">
+                <div class="heading">
+                    Add New User
+                    <hr>
+                </div>
+                <div class="sideimage">
+
+                </div>
+                <div class="form-control">
+                    <form method="POST" >
+                        <div class="form-group">
+                            <label for="">Username: <span class="star">*</span></label>
+                            <input name="username" type="text" required class="input-field" id="username" placeholder="Enter username">
+                        </div>
+                        <div class="" style="color: #c2262f; font-size: 1.5rem;">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Password: <span class="star">*</span></label>
+                            <input name="pw" type="password" required class="input-field" id="password" placeholder="Enter password">
+                        </div>
+                        <div class="" style="color: #c2262f; font-size: 1.5rem;">
+                        </div>
+
+                        <div class="" style="color: #c2262f; font-size: 1.5rem;">
+                        </div>
+
+                        <div class="">
+                            <label for=""></label>
+                            <button class="submitBtn" id="addUserBtn" onclick="addNewUser()">Add User</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- custom js file  -->
+        <script src="../../public/js/home.js"></script>
+        </body>
+         <!-- Popup succesful message -->
+         <!-- <div id="myModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>User succesfully added !!!</p>
+            </div>
+        </div> -->
+
+</html>

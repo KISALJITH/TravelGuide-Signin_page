@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom styling sheet -->
+    <link rel="stylesheet" href="../../public/styles/login.css">
+    
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+            <body>
+            <section>
+                <div class="wrapper">
+                    <div class="heading">
+                        Travel Guide
+                        <hr>
+                    </div>
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <form class="form-control" method="POST" action="http://localhost/travelGuide/view/pages/homePage.html">
+                        <div class="form-group">
+                            <label for="">Username: </span></label>
+                            <input type="text" required class="input-field" id="username" placeholder="Enter username" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password: </span></label>
+                            <input type="password" required class="input-field" id="password" placeholder="Enter password" name="password">
+                        </div>
+                        <div class="btn">
+                            <label for=""></label>
+                            <button class="submitBtn" onclick="login()">Log in</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- custom js file  -->
+            <script src="../../public/js/home.js"></script>
+            </body>
+</html>
